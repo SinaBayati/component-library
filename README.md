@@ -39,3 +39,24 @@ width of 800px. [See live demo](https://sinabayati.github.io/component-library/)
     <td>800px</td>
   </tr>
 </table>
+
+## Carousel
+
+In order to add a carousel to the page add below template 
+and add or remove `img` tags to the `div` with `slide-container` className. Make sure to add `slide` 
+className to the `img` tags or else the carousel wont work.
+This carousel is not reusable in the sense that only one 
+can be placed per page. The reason behind this is that the 
+carousel is storing its state in global variables.
+
+```
+  <div class="carousel">
+    <div class="carousel-frame">
+      <div class="slide-container">
+        <img src="" alt="" class="slide">
+      </div>
+    </div>
+    <button class="next"> &gt; </button>
+    <button class="prev"> &lt; </button>
+  </div>
+```

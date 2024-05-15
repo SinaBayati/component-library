@@ -2,6 +2,11 @@
   --drop-down-height: 30px;
   --drop-down-primary-color: #1b1b1b;
   --drop-down-secondary-color: #ffe600;
+  --carousel-width: 400px;
+  --carousel-height: 200px;
+  --carousel-main-color: #1b1b1b;
+  --carousel-secondary-color: #ffe600;
+  --carousel-button-size: 30px;
 }
 
 .drop-down{
@@ -82,3 +87,58 @@
   width: 800px;
 }
 
+.carousel{
+  border: 1px solid var(--carousel-secondary-color);
+  width: var(--carousel-width);
+  height: var(--carousel-height);
+  position: relative;
+}
+
+.carousel .carousel-frame{
+  position: relative;
+  width: var(--carousel-width);
+  height: var(--carousel-height);
+  overflow: hidden;
+}
+
+.carousel .slide-container{
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  transition: left .3s ease-out;
+}
+
+.carousel img.slide{
+  width: var(--carousel-width);
+  height: var(--carousel-height);
+}
+
+.carousel button{
+  position: absolute;
+  top: calc(50% - (var(--carousel-button-size) / 2));
+  background-color: var(--carousel-main-color);
+  border: none;
+  width: var(--carousel-button-size);
+  height: var(--carousel-button-size);
+  color: var(--carousel-secondary-color);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+  transition: .2s ease-in-out;
+}
+
+.carousel button:hover,
+.carousel button:active{
+  background-color: var(--carousel-secondary-color);
+  color: var(--carousel-main-color);
+  cursor: pointer;
+}
+
+.carousel button.next{
+  right: calc(var(--carousel-button-size) / -2);
+  border-left: 2px solid var(--carousel-secondary-color);
+}
+
+.carousel button.prev{
+  left: calc(var(--carousel-button-size) / -2);
+  border-right: 2px solid var(--carousel-secondary-color);
+}
