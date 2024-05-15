@@ -1,4 +1,4 @@
-# Components Library :books:
+# Component Library :books:
 
 
 ## Drop down menu 
@@ -10,7 +10,7 @@ element or add, remove or change innerHTML of the `li` elements.
 Add the className `drop-down-small` for a drop down menu with a 
 width of 200px, `drop-down-medium` for a drop down menu with a 
 width of 400px or `drop-down-big` for a drop down menu with a 
-width of 800px. [See live demo]()
+width of 800px. [See live demo](https://sinabayati.github.io/component-library/)
 
 <table>
   <tr>
