@@ -47,7 +47,7 @@ and add or remove `img` tags to the `div` with `slide-container` className. Make
 className to the `img` tags or else the carousel wont work.
 This carousel is not reusable in the sense that only one 
 can be placed per page. The reason behind this is that the 
-carousel is storing its state in global variables.
+carousel is storing its state in global variables. [See live demo](https://sinabayati.github.io/component-library/)
 
 ```
   <div class="carousel">
