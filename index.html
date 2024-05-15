@@ -4,18 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Components library</title>
+  <title>Component library</title>
   <style>
     body {
       background-color: black;
       color: white;
       font-family: 'Courier New', Courier, monospace;
+      padding: 2rem;
     }
   </style>
-<script defer src="main.bundle.js"></script></head>
+  <script src="./index.bundle.js" defer></script>
+</head>
 
 <body>
-  <h1>Components Library</h1>
+  <h1>Component Library</h1>
   <h2>Drop down menu</h2>
   <h3>Small</h3>
   <div class="drop-down drop-down-small">
@@ -44,7 +46,22 @@
       <li>item 3</li>
     </ul>
   </div>
+
   <h2>Carousel</h2>
+  <div class="carousel">
+    <div class="carousel-frame">
+      <div class="slide-container">
+        <img src="../src/media/intro-to-cloud.d49bc5f7.jpeg" alt="cloud training" class="slide">
+        <img src="../src/media/letter-s-logo-in-black-rs7xdoerr7vbdkva.jpg" alt="letter s logo" class="slide">
+        <img src="../src/media/intro-to-cloud.d49bc5f7.jpeg" alt="cloud training" class="slide">
+        <img src="../src/media/letter-s-logo-in-black-rs7xdoerr7vbdkva.jpg" alt="letter s logo" class="slide">
+        <img src="../src/media/intro-to-cloud.d49bc5f7.jpeg" alt="cloud training" class="slide">
+        <img src="../src/media/letter-s-logo-in-black-rs7xdoerr7vbdkva.jpg" alt="letter s logo" class="slide">
+      </div>
+    </div>
+    <button class="next"> &gt; </button>
+    <button class="prev"> &lt; </button>
+  </div>
 </body>
 
 </html>
