@@ -12,6 +12,16 @@ width of 200px, `drop-down-medium` for a drop down menu with a
 width of 400px or `drop-down-big` for a drop down menu with a 
 width of 800px. [See live demo](https://sinabayati.github.io/component-library/)
 
+```
+  <div class="drop-down drop-down-small">
+    <button>menu</button>
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ul>
+  </div>
+```
 <table>
   <tr>
     <th colspan="2">drop down menu sizes</th>
@@ -29,14 +39,3 @@ width of 800px. [See live demo](https://sinabayati.github.io/component-library/)
     <td>800px</td>
   </tr>
 </table>
-
-```
-  <div class="drop-down drop-down-small">
-    <button>menu</button>
-    <ul>
-      <li>item 1</li>
-      <li>item 2</li>
-      <li>item 3</li>
-    </ul>
-  </div>
-```
